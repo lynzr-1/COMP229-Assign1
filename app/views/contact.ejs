@@ -1,0 +1,60 @@
+<!--contact.ejs | Lyndsay Riches | 301271507 | September 26, 2023 -->
+
+<!--main_nav & header includes-->
+
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+
+<main class="container">
+  <div class="row row-eq-height">
+
+<!--MAIN CONTENT-->
+    <div class="col-12 main-content">
+      <h1 class="title display-4"><%= title %></h1>
+
+<!--BEGIN 2 COLUMN CONTENT-->
+      <div class="row">
+        <div class="col-md-9">
+  <!--BEGIN FORM-->
+          <form action="mailto:lriches1@my.centennialcollege.ca" method="post" id="form1">
+            <fieldset>
+              <legend>Contact Lyndsay</legend>
+    <!--User Info-->
+              <label for="userName">Name</label>
+                <input type="text" id="userName" name="userName"><br><br>
+              <label for="userEmail">Email</label>
+                <input type="text" id="userEmail" name="userEmail"><br><br>
+    <!--User Message-->               
+              <label for="userMessage">Message</label>
+                <textarea id="userMessage" name="userMessage" rows="6" cols="100"></textarea><br><br>
+            </fieldset>
+  <!--FORM BUTTONS-->           
+            <button type="reset" form="form1" value="Reset" class="form-button">CLEAR FORM</button>
+            <button type="submit" form="form1" value="Submit" class="form-button">SUBMIT FORM</button>
+          </form><!--END FORM-->
+          <p class="thanks">Thanks for reaching out!</p>
+        </div>
+<!--2ND COLUMN-->
+          <div class="col-md-3">
+            <p>Feel free to reach out to Lyndsay and initiate a conversation about game development, design, or any creative
+              collaboration. She is always eager to hear your ideas and explore new opportunities.</p>
+              <a href="mailto:lriches1@my.centennialcollege.ca" class="contact-links"><i class="fa-solid fa-envelope services-icon" style="color: #d8a597;"></i>Email Lyndsay</a></br>
+              <a href="https://lynzriches.itch.io/" class="contact-links"><i class="fa-brands fa-itch-io services-icon" style="color: #d8a597;"></i>Itch.io</a></br>
+              <a href="https://www.instagram.com/lyndsayrichesdesigns/" class="contact-links"><i class="fa-brands fa-instagram services-icon" style="color: #d8a597;"></i>Instagram</a></br></br>
+              <img class="page-images" src="/img/LRiches-Illustration2.jpg" alt="Illustration of Tropical Fish and Turtles by Lyndsay Riches"></img>
+              <p class="image-credit">Illustration by Lyndsay Riches &copy; 2023</p>
+          </div>  
+          
+<!--END 2 COLUMN CONTENT-->
+      </div><!--END ROW DIV-->
+
+    </div> <!--END MAIN PANEL CONTENT-->
+    
+  </div><!--END ROW DIV-->
+
+</main><!--END MAIN-->
+
+<!--bottom nav & footer includes-->
+
+<%- include ('partials/bottom_nav.ejs') %>
+<%- include ('partials/footer.ejs') %>

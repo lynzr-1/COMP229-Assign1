@@ -1,0 +1,326 @@
+/* style.css | Lyndsay Riches | 301271507 | September 26, 2023 */
+
+
+/* MAIN STYLING */
+
+html { 
+    height: 100%;
+    background-color: whitesmoke;
+}
+
+.container {
+    padding: 0;
+    margin: 0 auto;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100%;
+    color: #39393A;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.main-content {
+    padding: 50px;
+}
+
+/* NAVIGATION BAR STYLING */
+
+.navbar {
+    background-color: #B4E0E4 !important;
+    color: #39393A !important;
+    width: 100%;
+}
+
+ul.navbar-nav {
+    list-style: none; /* Remove the bullet */
+    display: inline; /* Display the list items inline */
+    font-size:18px;
+    text-transform: uppercase;
+    border-bottom: white dotted 2px;
+    margin-left: 25px !important;
+}
+        
+ul.navbar-nav li {
+    padding: 0px 25px;
+    height: 25%;
+    display: inline-block; /* Make the list items display inline */
+}
+
+.nav-item.active {
+    font-weight: bold;
+}
+
+.nav-item:hover {
+    background-color: #96D4D9;
+    color: white;
+}
+
+#logo {
+    width: 150px;
+    height: 150px;
+    margin-left: 25px;
+}
+
+
+/* LINK STYLING */
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+a.text-link {
+    color: #297373;
+    text-decoration: underline;
+}
+
+a.text-link:hover {
+    font-weight: bold;
+}
+
+button.main {
+    background-color: #B4E0E4 !important;
+    font-size: 16px;
+    border: none;
+    color: #39393A !important;
+    width: 20%;
+    margin: 10px 15px 25px 15px;
+    height: 40px;
+    border-radius: 5px;
+    float: left;
+}
+
+button.main:hover {
+    background-color: #297373 !important;
+    color: white !important;
+}
+
+a.contact-links {
+    color: #297373;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+a.contact-links:hover {
+    font-weight: bold;
+}
+
+/* TEXT STYLING */
+
+h1.title {
+    font-size: 28px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    border-bottom: #D8A597 dotted 2px;
+    font-weight: bold;
+}
+
+h2.subtitle {
+    font-size: 24px;
+    padding: 20px 0px;
+    color:#666;
+    font-weight: bold;
+}
+
+p {
+    padding-top: 15px;
+    font-size: 11pt;
+    line-height: 175%;
+}
+
+p.resume {
+    font-style: italic;
+    color:#666;
+    text-align: left;
+}
+
+.project-cols {
+    border-right: #CCC solid 1px;
+    padding: 0px 25px;
+}
+
+.project-right {
+    padding: 0px 25px;
+}
+
+h3.project {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 25px;
+}
+
+h3.services {
+    font-size: 18px;
+    font-weight: bold;
+    display:inline;
+}
+
+.image-credit {
+    font-size: 10px;
+    color:#666;
+    float: right;
+}
+
+p.thanks {
+    font-family: 'Grand Hotel', cursive;
+    color: #000;
+    font-size: 36px;
+    margin-top: 25px;
+    border-top: #D8A597 dotted 2px;
+    width: 100%;
+    text-align: right;
+}
+
+/* IMAGE STYLING */
+
+.page-images {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
+    width: 100%;
+}
+
+img.headshot {
+    width: 22%;
+    height: auto;
+    float: left;
+    padding: 25px 25px 0 0;
+}
+
+p.caption {
+    font-size: 10pt;
+    color:#39393A;
+    text-align: center;
+    margin-top: 15px;
+}
+
+img.project-img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.fa-regular {
+    padding-right: 10px;
+}
+
+.services {
+    padding-top: 20px;
+}
+
+.services-icon {
+    display:inline;
+    padding-right: 10px;
+}
+
+
+/* Contact Form Styling */
+form {
+    margin: 0 auto;
+    line-height: 150%;
+    width: 100%;
+    height: auto;
+}
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+legend {
+    font-size: 20px;
+    color:#39393A;
+    width: 100%;
+    border: none;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+label {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+input[type="text"] {
+    outline: none !important;
+    background-color: #ddd;
+    border: 1px solid #aaa;
+    height: 25px;
+    float: right;
+    width: 85%;
+}
+input[type="text"]:focus {
+    outline: none !important;
+    border: 1px solid #bbb;
+    background-color: white;
+}
+select {
+    outline: none !important;
+    background-color: #ddd;
+    border: 1px solid #bbb;
+    height: 25px;
+    margin: 0 40px 0 15px;
+}
+textarea {
+    overflow: auto;
+    display: block;
+    background-color: #ddd;
+    border: 1px solid #aaa;
+    width: 100%;
+}
+textarea:focus {
+    outline: none !important;
+    border: 1px solid #bbb;
+    background-color: white;
+}
+button.form-button {
+    padding: 10px;
+    background-color: #B4E0E4 !important;
+    color: #39393A !important;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 0 20px 0 0;
+    width: 25%;
+}
+button.form-button:hover {
+    background-color: #297373 !important;
+    color: white !important;
+}
+
+
+/* FOOTER STYLING */
+
+footer {
+    background-color: #39393A;
+    color: #ffffff;
+    padding: 10px;
+    font-size: small;
+}
+
+.center { 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+.social-icons {
+    padding-right: 15px;
+    float: right;
+}

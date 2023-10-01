@@ -1,0 +1,58 @@
+<!--index.ejs | Lyndsay Riches | 301271507 | September 26, 2023 -->
+
+<!--main_nav & header includes-->
+
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+
+<main class="container">
+  <div class="row row-eq-height">
+
+<!--MAIN CONTENT-->
+    <div class="col-12 main-content">
+      <h1 class="title display-4">Welcome to Lyndsay Riches Designs</h1>
+
+<!--BEGIN 2 COLUMN CONTENT-->
+    <div class="row">
+      <div class="col-md-9">
+<!--INTRO BLURB-->
+        <p>As an accomplished graphic designer embarking on an exciting journey into the world of game development, 
+          Lyndsay invites you to explore her evolving portfolio of game experiences. With a passion for storytelling 
+          and a keen eye for design, she is dedicated to crafting captivating worlds that leave a lasting impression. 
+          Join her on this adventure as she bridges the gap between artistry and interactive entertainment.</p>
+          <p>Lyndsay is currently hard at work on a video game group project with classmates called "Buzz Off, Eh? Muskoka
+            Mosquito Mayhem." The game is a 2D, side-scrolling platformer that takes place in the Muskoka region of Ontario, Canada.
+            Lyndsay has been working on the game's logo and enemy designs, and will also contribute to the game's coding and level design.
+          </p>
+<!--LINK BUTTONS-->
+          <button onclick="location.href='/about'" type="button" class="main">About Lyndsay</button>
+          <button onclick="location.href='/projects'" type="button" class="main">Projects</button>
+          <button onclick="location.href='/services'" type="button" class="main">Services</button>
+          <button onclick="location.href='/contact'" type="button" class="main">Contact</button>   
+<!--MISSION STATEMENT-->
+        <h3 class="project">Mission Statement</h2>
+        <p>Lyndsay's mission is to leverage her years of experience in graphic design to craft immersive and visually captivating 
+          game experiences. Through her dedication to creativity, technical skills, and passion for storytelling, she aims to 
+          contribute to the gaming industry by bringing unique worlds to life and creating memorable experiences for players worldwide.</p> 
+        </div>
+<!--2ND COLUMN CONTENT-->
+      <div class="col-md-3">
+        <img class="page-images" src="/img/BuzzOffLogo-sm.jpg" alt="Buzz Off, Eh? Game Logo Design by Lyndsay Riches"></img>
+        <p class="image-credit">Video Game Logo Design by Lyndsay Riches &copy; 2023</p>
+        <img class="page-images" src="/img/BuzzOff-EnemyDesigns.jpg" alt="Buzz Off, Eh? Enemy Designs by Lyndsay Riches"></img>
+        <p class="image-credit">Video Game Enemy Designs by Lyndsay Riches &copy; 2023</p>
+      </div>
+<!--END 2 COLUMN CONTENT-->
+  </div>
+
+</div> <!--END MAIN PANEL CONTENT-->
+
+</div><!--END ROW DIV-->
+
+</main><!--END MAIN-->
+
+<!--bottom nav & footer includes-->
+
+<%- include ('partials/bottom_nav.ejs') %>
+<%- include ('partials/footer.ejs') %>
+   

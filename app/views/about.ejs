@@ -1,0 +1,53 @@
+<!--about.ejs | Lyndsay Riches | 301271507 | September 26, 2023 -->
+
+<!--main_nav & header includes-->
+
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+
+<main class="container">
+  <div class="row row-eq-height">
+
+<!--MAIN CONTENT-->
+    <div class="col-12 main-content">
+      <h1 class="title display-4"><%= title %></h1>
+
+<!--BEGIN 2 COLUMN CONTENT-->
+        <div class="row">
+          <div class="col-md-9">
+<!--BLURB ABOUT LYNDSAY-->
+<img class="headshot" src="/img/LRiches-headshot.jpg" alt="Headshot of Lyndsay Riches"></img>
+            <p>Lyndsay Riches is an Indigenous Canadian graphic designer and game developer. She is in her third semester (second year) of the Game Programming Online course at 
+              Centennial College, and has many years of experience in the print industry as a graphic designer and pre-press operator. She has a passion for 
+              creating fun and engaging games, and is also interested in web design and development.</p>
+            <p>In her "spare time" you will likely find Lyndsay enjoying an MMO with guildmates, reading a dystopian or historial fiction novel, cooking, or 
+              improving her coding skills. Lyndsay enjoys the challenge of learning new things, and is always looking for new opportunities to expand her knowledge.</p>
+            <p>Lyndsay currently works full-time in a graphic design/pre-press role at a Marketing &amp; Print firm in Burlington, Ontario, and resides in Oakville.
+              She is hoping to begin developing indie games in the near future along with her daughter who is currently studying Illustration at Sheridan College.
+            </p>
+<!--RESUME LINK-->
+            <p class="resume"><i class="fa-regular fa-circle-right fa-xl" style="color: #d8a597;"></i>
+              You can find more about Lyndsay's skills, education, and experience in her
+              <a class="text-link" href="/pdf/LRiches_Sept2023.pdf" target="blank" alt="Lyndsay Riches resume PDF">resume.</a></p>
+          </div>
+<!--2ND COLUMN-->
+          <div class="col-md-3">
+            <img class="page-images" src="/img/LRiches-Illustration1.jpg" alt="Halloween Friends Illustration by Lyndsay Riches"></img>
+            <p class="image-credit">Illustration by Lyndsay Riches &copy; 2023</p>
+            <img class="page-images" src="/img/Angstloch-Logo-Bricks.jpg" alt="Angstloch Video Game Logo Design by Lyndsay Riches"></img>
+            <p class="image-credit">Video Game Logo Design by Lyndsay Riches &copy; 2023</p>
+          </div>
+<!--END 2 COLUMN CONTENT-->
+      </div>
+
+    </div> <!--END MAIN PANEL CONTENT-->
+    
+  </div><!--END ROW DIV-->
+
+</main><!--END MAIN-->
+
+<!--bottom nav & footer includes-->
+
+<%- include ('partials/bottom_nav.ejs') %>
+<%- include ('partials/footer.ejs') %>
+   

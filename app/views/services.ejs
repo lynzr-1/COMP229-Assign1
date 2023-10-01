@@ -1,0 +1,81 @@
+<!--services.ejs | Lyndsay Riches | 301271507 | September 26, 2023 -->
+
+<!--main_nav & header includes-->
+
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+   
+<main class="container">
+  <div class="row row-eq-height">
+
+<!--MAIN CONTENT-->
+    <div class="col-12 main-content">
+      <h1 class="title display-4"><%= title %></h1>
+
+<!--SERVICES LIST/BRIEF DESCRIPTIONS-->
+
+<!--4 COLUMN LAYOUT-->
+        <div class="row">
+          <div class="col-md-3 services">
+            <i class="fa-solid fa-computer fa-xl services-icon" style="color: #d8a597;"></i>
+            <h3 class="services">Graphic Design</h3>
+            <p>With over 20 years graphic design experience, Lyndsay is well-equipped to handle your next design project. Projects include Annual Reports, Business Cards,
+              Posters, Flyers, Brochures, Labels, Postcards, Direct Mail Campaigns and more.</p>
+          </div>
+          <div class="col-md-3 services">
+            <i class="fa-solid fa-bezier-curve fa-xl services-icon" style="color: #d8a597;"></i>
+            <h3 class="services">Logo Design</h3>
+            <p>Lyndsay has developed many logos over the years, and can help you create a logo that will help your business stand out from the crowd. She will work
+              with you to create a logo that is unique, memorable, and effective.</p>
+          </div>
+          <div class="col-md-3 services">
+            <i class="fa-solid fa-print fa-xl services-icon" style="color: #d8a597;"></i>
+            <h3 class="services">Pre-Press Services</h3>
+            <p>Prepping your file for the best print results is an important step in the printing process. Lyndsay has many years of experience in the print industry,
+              and can help you ensure that your file is ready for print.</p>
+          </div>
+          <div class="col-md-3 services">
+            <i class="fa-solid fa-bullhorn fa-xl services-icon" style="color: #d8a597;"></i>
+            <h3 class="services">Social Media</h3>
+            <p>Lyndsay can help you create social media graphics that drive engagement and increase brand awareness. She can also help you create a social media
+              marketing strategy that will help you reach your target audience and increase your sales.</p>
+          </div>
+        </div> <!--END 4 COLUMNS-->
+
+<!--4 COLUMN LAYOUT-->
+        <div class="row">
+          <div class="col-md-3 services">
+            <i class="fa-solid fa-pencil fa-xl services-icon" style="color: #d8a597;"></i>
+            <h3 class="services">Illustration</h3>
+            <p>2D graphics and illustrations are some of Lyndsay's favourite projects to work on. She can create custom illustrations for your next project, including
+              logos, icons, and more.</p>
+          </div>
+          <div class="col-md-3 services">
+            <i class="fa-solid fa-dungeon fa-xl services-icon" style="color: #d8a597;"></i>
+            <h3 class="services">2D Game Assets</h3>
+            <p>Going hand-in-hand with her graphic design skills, Lyndsay can create custom 2D game assets for your next game project. She can create sprites, backgrounds,
+              and UI elements that will help your game stand out from the crowd.</p>
+          </div>
+          <div class="col-md-3 services">
+            <i class="fa-solid fa-laptop-code fa-xl services-icon" style="color: #d8a597;"></i>
+            <h3 class="services">Game Programming</h3>
+            <p>While Lyndsay is still learning a lot about the game programming process, she is eager to put her skills to work on your next game project. She has experience
+              with C# in Unity, and is always looking for new opportunities to expand her knowledge.</p>
+          </div>
+          <div class="col-md-3 services">
+            <img class="page-images" src="/img/LRiches-Design1.jpg" alt="Recycling Handbook Design by Lyndsay Riches"></img>
+            <p class="image-credit">Handbook Design by Lyndsay Riches &copy; 2023</p>
+          </div>
+        </div> <!--END 4 COLUMNS-->
+
+    </div> <!--END MAIN PANEL CONTENT-->
+
+  </div><!--END ROW DIV-->
+
+</main><!--END MAIN-->
+
+<!--bottom nav & footer includes-->
+
+<%- include ('partials/bottom_nav.ejs') %>
+<%- include ('partials/footer.ejs') %>
+   

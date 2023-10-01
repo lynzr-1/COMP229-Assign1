@@ -1,0 +1,66 @@
+<!--main_nav.ejs | Lyndsay Riches | 301271507 | September 26, 2023 -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <div class="container-fluid">
+
+<!--Logo-->
+    <a class="navbar-brand" href="/index"><img src="/img/LRiches-Logo.png" alt="logo" id="logo"></a>
+
+<!--Navbar Toggler for small screens-->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+<!--NAV LINKS-->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+      <ul class="navbar-nav">
+
+<!--Home Link-->
+        <% if (title=="Home") { %>
+          <li class="nav-item active">
+            <% } else { %>
+              <li class="nav-item">
+                <% } %>
+              <a class="nav-link" href="/">Home</a>
+          </li>
+<!--About Link-->
+        <% if (title=="About") { %>
+          <li class="nav-item active">
+            <% } else { %>
+              <li class="nav-item">
+                <% } %>
+              <a class="nav-link"  href="/about">About</a>
+          </li>
+<!--Projects Link-->
+        <% if (title=="Projects") { %>
+          <li class="nav-item active">
+            <% } else { %>
+              <li class="nav-item">
+                <% } %>
+              <a class="nav-link"  href="/projects">Projects</a>
+          </li>
+<!--Services Link-->
+        <%if(title=="Services"){%>
+          <li class="nav-item active">
+            <% } else { %>
+              <li class="nav-item">
+                <% } %>
+              <a class="nav-link"  href="/services">Services</a>
+          </li>
+<!--Contact Link-->
+        <% if (title=="Get In Touch") { %>
+          <li class="nav-item active">
+            <% } else { %>
+              <li class="nav-item">
+                <% } %>
+              <a class="nav-link"  href="/contact">Contact</a>
+          </li>
+      </ul>
+
+    </div><!--END NAVBAR COLLAPSE DIV-->
+
+  </div><!--END CONTAINER DIV-->
+
+</nav><!--END NAV-->
