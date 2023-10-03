@@ -16,7 +16,7 @@
       <div class="row">
         <div class="col-md-9">
   <!--BEGIN FORM-->
-          <form action="/index.ejs" method="post" id="form1">
+          <form method="post" id="form1">
             <fieldset>
               <legend>Contact Lyndsay</legend>
     <!--User Info-->
@@ -30,7 +30,7 @@
             </fieldset>
   <!--FORM BUTTONS-->           
             <button type="reset" form="form1" value="Reset" class="form-button">CLEAR FORM</button>
-            <button type="submit" form="form1" value="Submit" class="form-button">SUBMIT FORM</button>
+            <button type="submit" form="form1" value="Submit" class="form-button" onclick="location.href='/contact'">SUBMIT FORM</button>
           </form><!--END FORM-->
           <p class="thanks">Thanks for reaching out!</p>
         </div>
